@@ -103,6 +103,7 @@
             <p><code>text-shadow: 1px 1px 1px black;</code> - sombra do texto.</p>
             <p><code>text-transform: uppercase;</code> - especifica como capitalizar um texto de um elemento.</p>
             <p><code>color: black;</code> - cor do texto.</p>
+            <p><code>line-heigt: 10px;</code> - espaço vertical entre as linhas.</p>
         </article>
         <article>
             <h2>XXXXX</h2>
@@ -110,10 +111,81 @@
             <p><code>padding: 20px:</code> - preenchimento da caixa.</p>
             <p><code>width: 100vw;</code> - largura da caixa.</p>
             <p><code>height: 100vh;</code> - altura da caixa.</p>
+            <p><code>display: block;</code> - display do objeto.</p>
             <p><code>outline: auto;</code> - contorno da caixa.</p>
             <p><code>background-color: red;</code> - cor de fundo.</p>
             <p><code>border-radius: 50%;</code> - arrendondar as bordas da caixa.</p>
             <p><code>box-shadow: 1px 1px 1px black;</code> - sombra da caixa.</p>
+        </article>
+        <article>
+            <h2>Adicionando Font Externa</h2>
+            <p>@font-face {<br><code>font-family: (o nome da font);</code><br><code>src: url(caminho da font) format(tipo da font);</code> }</p>
+        </article>
+        <article>
+            <h2>Seletores Personalizados</h2>
+            <p># = id</p>
+            <p>. = class</p>
+            <p>: = pseudo-class</p>
+            <p>:: = pseudo-elemento</p>
+            <p>> = elemento filho</p>
+        </article>
+        <article>
+            <h2>Pseudo-Classe de Links</h2>
+            <p><code>a:visited</code> - link visitado.</p>
+            <p><code>a:hover</code> - quando o mouse é passado por cima do link.</p>
+            <p><code>a:active</code> - link que já foi ativado antes</p>
+            <p><code>a::after</code> - elemento após o link.</p>
+        </article>
+        <article>
+            <h2>Imagem como Borda</h2>
+            <p><code>border-image-source: url();</code> - caminho da imagem.</p>
+            <p><code>border-image-slice: 10;</code> - tamanho da imagem.</p>
+            <p><code>border-image-repeat: repeat;</code> - se vai ou não haver repetição.</p>
+        </article>
+        <article>
+            <h2>Variáveis</h2>
+            <p>:root {<br> <code>--cor1: white;</code> - nome da variável e o que ela vai guardar. <br><code>--cor2: black;</code> }</p>
+        </article>
+        <article>
+            <h2>CSS para Listas</h2>
+            <p><code>list-style-type: '\(código do síbolo)'</code> - mudar o síbolo da lista.</p>
+            <p><code>list-style-position: inside;</code> - puxar o síbolo para dentro do bloco.</p>
+            <p><code>columns: 2;</code> - número de colunas.</p>
+        </article>
+        <article>
+            <h2>Imagem</h2>
+            <p><code>background-image: url();</code> - caminho da imagem de fundo.</p>
+            <p><code>background-position: left top;</code> - posicionamento da imagem.</p>
+            <p><code>background-size: 100px;</code> - tamanho da imagem.</p>
+            <p><code>background-repeat: no-repeat;</code> - número de repetições da imagem.</p>
+            <p><code>background-size: cover;</code> - preencher o fundo inteiro com a imagem.</p>
+            <p><code>background-attachement: fixed;</code> - para a imagem de fundo ficar fixa.</p>
+            <p>ShortHand: <br>
+            <code>background: color > image > position > repeat > size(não está funcionando) > attachement;</code></p>
+        </article>
+        <article>
+            <h2>Iframe</h2>
+            <p><code>&ltiframe src="caminho do site"frameborder="0" &gt</code> - tag do iframe.</p>
+            <p><code>target="'name' do iframe"</code> - para abrir um link dentro do Iframe.</p>
+            <p><code>sandbox="sandbox"</code> - para bloquear ações dentro do Iframe.</p>
+            <p><code>referrerpolicy="no-referrer"</code> - para não permitir a coleta de dados dentro do Iframe.</p>
+        </article>
+        <article>
+            <h2>Tabelas</h2>
+            <p><code>&ltcaption&gt</code> - título da tabela.</p>
+            <p><code>&lttr&gt</code> - linha da tabela.</p>
+            <p><code>&ltth&gt</code> - título da coluna da tabela.</p>
+            <p><code>&lttd&gt</code> - dado da tabela.</p>
+            <p><code>&ltthead&gt</code> - cabeçalho da tabela.</p>
+            <p><code>&lttbody&gt</code> - corpo da tabela.</p>
+            <p><code>&lttfoot&gt</code> - rodapé da tabela.</p>
+            <p><code>border-collapse: collapse;</code> - deixar as linhas da tabela juntas.</p>
+            <p><code>vertical-aligh: bottom;</code> - alinhamento vertical.</p>
+            <p><code>escope: "col/row";</code> - para indicar se os dados estão do lado ou abaixo.</p>
+            <p><code>colspan="2"</code> - mesclagem de colunas.</p>
+            <p><code>rowspan="3"</code> - mesclagem de linhas.</p>
+            <p><code>th:nth-child(2n){}</code> - efeito zebrado.</p>
+            <p><code>&ltcolgroup&gt > &ltcol&gt</code> - selecionar colunas.</p>
         </article>
     </main>
     <footer>
