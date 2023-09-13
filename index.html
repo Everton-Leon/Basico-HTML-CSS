@@ -26,6 +26,15 @@
         <code>&ltlink:favicon&gt</code> - define o ícone que é exibido no topo da página.
         <code>&ltlink:css&gt</code> - define o caminho para o css.</pre></p>
         </article>
+        <section>
+            <h2>Tags Semânticas</h2>
+            <p><code>&ltheader&gt</code> - define o cabeçalho do HTML.</p>
+            <p><code>&ltnav&gt</code> - define uma navegação/menu.</p>
+            <p><code>&ltsection&gt</code> - cria uma seção.</p>
+            <p><code>&ltarticle&gt</code> - cria um artigo.</p>
+            <p><code>&ltaside&gt</code> - define conteúdo a parte.</p>
+            <p><code>&ltfooter&gt</code> - define um rodapé.</p>
+        </section>
         <article>
             <h2>Titúlos</h2>
             <p><code>&lth1&gt</code> - é a abreviação do termo em inglês de Header 1, que significa Cabeçalho 1.</p>
@@ -186,6 +195,31 @@
             <p><code>rowspan="3"</code> - mesclagem de linhas.</p>
             <p><code>th:nth-child(2n){}</code> - efeito zebrado.</p>
             <p><code>&ltcolgroup&gt > &ltcol&gt</code> - selecionar colunas.</p>
+        </article>
+        <article>
+            <h2>Formulários</h2>
+            <p><code>&ltform&gt</code> - criar área de formulário. <br>action="cadasrto.php" - ligar o formulário a outra linguagem. <br>method="get/post" - indica como os dados serão enviados.</p>
+            <p><code>&ltlabel&gt</code> - liga o input a um texto. <br>for="(o id do input)"</p>
+            <p><code>&ltinput&gt</code> - cria a área que ira receber os dados. <br>type="text" - indica o tipo do input. <br>required - indica que o campo é obrigtório. <br>minlength="5" - mínimo de caracteres aceitos. <br>maxlength="15" - maximo de caracteres aceitos. <br>max="0" - número mínimo aceito. <br>max="100" - número maximo aceito. <br>size="30" - o tamanho da caixa. <br>placeholder="Digite seu email" - dica para o usuário digitar. <br>step="0.5" - tamanho do salto em caixas numericas. <br>value="" - valor predefinido para a caixa. <br>pattern="^\(\d{2}\)\d{4,5}-\d{4}$" - padrão predefinido de escrita. <br>checked - a caixa já começa marcada.</p>
+            <p><code>&lttextarea&gt</code> - área de texto.</p>
+        </article>
+        <article>
+            <h2>Select</h2>
+            <p><code>&ltslect&gt</code> - cria a lista de seleção.</p>
+            <p><code>&ltoption&gt</code> - opções da lista.</p>
+            <p><code>&ltoptgroup&gt</code> - título da lista.</p>
+            <p><code>&ltdatalist&gt</code> - possíveis valores da lista.</p>
+        </article>
+        <article>
+            <h2>Media Queryies</h2>
+            <p>&ltlink rel="stylesheet" href="estilos/celular.css" media="(o tipo de media. Ex: screen, print, all, etc.)"&gt</p>
+            <p>media="screen and (orientation: portraid)"</p>
+            <h3>Typical Device Brakpoints</h3>
+            <p>Pequenas telas: até 600px. <br>
+            Celular: 600px até 768px. <br>
+            Tablet: 768px até 992px. <br>
+            Desktop: 992px até 1200px. <br>
+            Grandes telas: acima de 1200px.</p>
         </article>
     </main>
     <footer>
