@@ -108,34 +108,60 @@
                 <dd>- Cria um parágrafo ficticio.</dd>
             </dl>
         </section>
-        <article>
-            <h2>Listas</h2>
-            <p><code>&ltol&gt</code> - lista ordenada. <br>
-                Ex: <ol>
-                    <li>Banana</li>
-                    <li>Maçã</li>
-                    <li>Morango</li>
-                </ol></p>
-            <p><code>&ltli&gt</code> - item da lista.</p>
-            <p><code>&ltul&gt</code> - lista não ordenada. <br>Ex: <ul>
-                <li>Carro</li>
-                <li>Moto</li>
-                <li>Caminhão</li>
-            </ul></p>
-            <p><code>&ltdl&gt</code> - lista de definição. <br><code>&ltdt&gt</code> - Termo da lista. <br>
-            <code>&ltdd&gt</code> - descrição do termo. <br>
-            Ex: <dl>
-                <dt>Carro</dt>
-                <dd>Veículo de 4 rodas</dd>
-            </dl></p>
-        </article>
-        <article>
-            <h2>Link</h2>
-            <p><code>&lta&gt</code> - cria referência de link. <br><code>href=""</code> - link de destino. <br><code>target="_blank"</code> - abrir o link em outra guia. <br><code>rel="external"</code> - indica que é um link externo. <br>
-            <code>rel="next"</code> - indica que é a proxima página do proprio site. <br><code>rel="prev"</code> - indica que o link volta para página anterior. <br><code>rel="nofollow"</code> - indica que você não sabe a procedência do site em questão.</p>
-            <h3>Download</h3>
-            <p><code>&lta&gt</code> <br><code>href=""</code> - o nome do arquivo que vai ser baixado (tem que está na pasta do projeto) <br><code>download=""</code> - o nome do arquivo novamente. <br><code>&lttype="application/pdf"&gt</code> - o tipo do arquivo.</p>
-        </article>
+        <section>
+            <dl>
+                <h2>Listas</h2>
+                <dt><code>&ltol&gt</code></dt> 
+                <dd>- Lista ordenada.</dd>
+                    <p>Exemplo:</p> <ol>
+                        <li>Banana</li>
+                        <li>Maçã</li>
+                        <li>Morango</li>
+                    </ol>
+                <dt><code>&ltli&gt</code></dt> 
+                <dd>- Item da lista.</dd>
+                <dt><code>&ltul&gt</code></dt> 
+                <dd>- Lista não ordenada.</dd> 
+                <p>Exemplo:</p> <ul>
+                    <li>Carro</li>
+                    <li>Moto</li>
+                    <li>Caminhão</li>
+                </ul>
+                <dt><code>&ltdl&gt</code></dt> 
+                <dd>- Lista de definição.</dd> 
+                <dt><code>&ltdt&gt</code></dt> 
+                <dd>- Termo da lista de definição.</dd> 
+                <dt><code>&ltdd&gt</code></dt> 
+                <dd>- Descrição do termo. </dd>
+                <p>Exemplo:</p> <dl>
+                    <dt>Carro</dt>
+                    <dd>- Veículo de 4 rodas</dd>
+                </dl>
+            </dl>
+        </section>
+        <section>
+            <dl>
+                <h2>Link</h2>
+                <dt><code>&lta&gt</code></dt>
+                <dd>- Cria referência de link.</dd> <dt><code>href=""</code></dt>
+                <dd>- Link de destino. </dd>
+                <dt><code>target="_blank"</code></dt>
+                <dd>- Abrir o link em outra guia.</dd> <dt><code>rel="external"</code></dt>
+                <dd>- Indica que é um link externo.</dd>
+                <dt><code>rel="next"</code></dt>
+                <dd>- Indica que é a proxima página do proprio site. </dd>
+                <dt><code>rel="prev"</code></dt>
+                <dd>- Indica que o link volta para página anterior. </dd>
+                <dt><code>rel="nofollow"</code></dt>
+                <dd>- Indica que você não sabe a procedência do site em questão.</dd>
+                <h3>Download</h3>
+                <code>&lta&gt</code>
+                <dt><code>href=""</code></dt> 
+                <dd>- O nome do arquivo que vai ser baixado (tem que está na pasta do projeto)</dd> <dt><code>download=""</code></dt> 
+                <dd>- O nome do arquivo novamente.</dd> <dt><code>&lttype="application/pdf"&gt</code></dt> 
+                <dd>- O tipo do arquivo.</dd>
+            </dl>
+        </section>
         <hr>
         <article>
             <h1>CSS</h1>
