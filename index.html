@@ -162,6 +162,90 @@
                 <dd>- O tipo do arquivo.</dd>
             </dl>
         </section>
+        <section>
+            <h2>Iframe</h2>
+            <dl>
+                <dt><code>&ltiframe src="caminho do site"frameborder="0" &gt</code></dt> 
+                <dd>- Tag do iframe.</dd>
+                <dt><code>target="'name' do iframe"</code></dt> 
+                <dd>- Para abrir um link dentro do Iframe.</dd>
+                <dt><code>sandbox="sandbox"</code></dt> 
+                <dd>- Para bloquear ações dentro do Iframe.</dd>
+                <dt><code>referrerpolicy="no-referrer"</code></dt> 
+                <dd>- Para não permitir a coleta de dados dentro do Iframe.</dd>
+            </dl>
+        </section>
+        <section>
+            <h2>Tabelas</h2>
+            <dl>
+                <dt><code>&ltcaption&gt</code></dt>
+                <dd>- Título da tabela.</dd>
+                <dt><code>&lttr&gt</code></dt> 
+                <dd>- Linha da tabela.</dd>
+                <dt><code>&ltth&gt</code></dt> 
+                <dd>- Título da coluna da tabela.</dd>
+                <dt><code>&lttd&gt</code></dt>
+                <dd>- Dado da tabela.</dd>
+                <dt><code>&ltthead&gt</code></dt> 
+                <dd>- Cabeçalho da tabela.</dd>
+                <dt><code>&lttbody&gt</code></dt> 
+                <dd>- Corpo da tabela.</dd>
+                <dt><code>&lttfoot&gt</code></dt> 
+                <dd>- Rodapé da tabela.</dd>
+                <dt><code>border-collapse: collapse;</code></dt> 
+                <dd>- Deixar as linhas da tabela juntas.</dd>
+                <dt><code>vertical-aligh: bottom;</code></dt> <dd>- Alinhamento vertical.</dd>
+                <dt><code>escope: "col/row";</code></dt> <dd>- Para indicar se os dados estão do lado ou abaixo.</dd>
+                <dt><code>colspan="2"</code></dt> 
+                <dd>- Mesclagem de colunas.</dd>
+                <dt><code>rowspan="3"</code></dt> 
+                <dd>- Mesclagem de linhas.</dd>
+                <dt><code>th:nth-child(2n){}</code></dt> <dd>- Efeito zebrado.</dd>
+                <dt><code>&ltcolgroup&gt > &ltcol&gt</code></dt> 
+                <dd>- Selecionar colunas.</dd>
+            </dl>
+        </section>
+        <section>
+            <h2>Formulários</h2>
+            <dl>
+                <dt><code>&ltform&gt</code></dt> 
+                <dd>- Criar área de formulário.</dd> <dt>action="cadasrto.php"</dt> 
+                <dd>- Ligar o formulário a outra linguagem.</dd> 
+                <dt>method="get/post"</dt> 
+                <dd>- Indica como os dados serão enviados.</dd>
+                <dt><code>&ltlabel&gt</code></dt> 
+                <dd>- Liga o input a um texto.</dd> 
+                <dt>for="(o id do input)"</dt>
+                <dt><code>&ltinput&gt</code></dt> 
+                <dd>- Cria a área que ira receber os dados.</dd> <dt>type="text"</dt> 
+                <dd>- Indica o tipo do input.</dd> <dt>required</dt> 
+                <dd>- Indica que o campo é obrigtório.</dd> <dt>minlength="5"</dt> 
+                <dd>- Mínimo de caracteres aceitos.</dd> <dt>maxlength="15"</dt>
+                <dd>- Máximo de caracteres aceitos.</dd> <dt>max="0"</dt> 
+                <dd>- Número mínimo aceito.</dd> <dt>max="100"</dt> <dd>- número maximo aceito.</dd>
+                <dt>size="30"</dt> 
+                <dd>- O tamanho da caixa.</dd> <dt>placeholder="Digite seu email"</dt> 
+                <dd>- dica para o usuário digitar.</dd> <dt>step="0.5"</dt> <dd>- tamanho do salto em caixas numericas.</dd>
+                <dt>value=""</dt> 
+                <dd>- valor predefinido para a caixa.</dd> <dt>pattern="^\(\d{2}\)\d{4,5}-\d{4}$"</dt> <dd>- padrão predefinido de escrita.</dd> <dt>checked</dt> 
+                <dd>- a caixa já começa marcada.</dd>
+                <dt><code>&lttextarea&gt</code></dt> 
+                <dd>- área de texto.</dd>
+            </dl>
+        </section>
+        <section>
+            <h2>Select</h2>
+            <dl>
+                <dt><code>&ltslect&gt</code> </dt>
+                <dd>- Cria a lista de seleção.</dd>
+                <dt><code>&ltoption&gt</code></dt>
+                <dd>- Opções da lista.</dd>
+                <dt><code>&ltoptgroup&gt</code></dt> 
+                <dd>- Título da lista.</dd>
+                <dt><code>&ltdatalist&gt</code></dt> 
+                <dd>- Possíveis valores da lista.</dd>
+            </dl>
+        </section>
         <hr>
         <section>
             <h1>CSS</h1>
@@ -216,91 +300,74 @@
                 <dd>- Sombra da caixa.</dd>
             </dl>
         </section>
-        <article>
+        <section>
             <h2>Adicionando Font Externa</h2>
             <p>@font-face {<br><code>font-family: (o nome da font);</code><br><code>src: url(caminho da font) format(tipo da font);</code> }</p>
-        </article>
-        <article>
+        </section>
+        <section>
             <h2>Seletores Personalizados</h2>
             <p># = id</p>
             <p>. = class</p>
             <p>: = pseudo-class</p>
             <p>:: = pseudo-elemento</p>
             <p>> = elemento filho</p>
-        </article>
-        <article>
+        </section>
+        <section>
             <h2>Pseudo-Classe de Links</h2>
-            <p><code>a:visited</code> - link visitado.</p>
-            <p><code>a:hover</code> - quando o mouse é passado por cima do link.</p>
-            <p><code>a:active</code> - link que já foi ativado antes</p>
-            <p><code>a::after</code> - elemento após o link.</p>
-        </article>
-        <article>
+            <dl>
+                <dt><code>a:visited</code></dt> 
+                <dd>- Link visitado.</dd>
+                <dt><code>a:hover</code></dt> 
+                <dd>- Quando o mouse é passado por cima do link.</dd>
+                <dt><code>a:active</code></dt> 
+                <dd>- link que já foi ativado antes.</dd>
+                <dt><code>a::after</code></dt> 
+                <dd>- Elemento após o link.</dd>
+            </dl>
+        </section>
+        <section>
             <h2>Imagem como Borda</h2>
-            <p><code>border-image-source: url();</code> - caminho da imagem.</p>
-            <p><code>border-image-slice: 10;</code> - tamanho da imagem.</p>
-            <p><code>border-image-repeat: repeat;</code> - se vai ou não haver repetição.</p>
-        </article>
-        <article>
+            <dl>
+                <dt><code>border-image-source: url();</code></dt> 
+                <dd>- Caminho da imagem.</dd>
+                <dt><code>border-image-slice: 10;</code></dt> <dd>- Tamanho da imagem.</dd>
+                <dt><code>border-image-repeat: repeat;</code></dt> 
+                <dd>- Se vai ou não haver repetição.</dd>
+            </dl>
+        </section>
+        <section>
             <h2>Variáveis</h2>
             <p>:root {<br> <code>--cor1: white;</code> - nome da variável e o que ela vai guardar. <br><code>--cor2: black;</code> }</p>
-        </article>
-        <article>
+        </section>
+        <section>
             <h2>CSS para Listas</h2>
-            <p><code>list-style-type: '\(código do síbolo)'</code> - mudar o síbolo da lista.</p>
-            <p><code>list-style-position: inside;</code> - puxar o síbolo para dentro do bloco.</p>
-            <p><code>columns: 2;</code> - número de colunas.</p>
-        </article>
-        <article>
+            <dl>
+                <dt><code>list-style-type: '\(código do síbolo)'</code></dt> 
+                <dd>- Mudar o síbolo da lista.</dd>
+                <dt><code>list-style-position: inside;</code></dt> 
+                <dd>- Puxar o síbolo para dentro do bloco.</dd>
+                <dt><code>columns: 2;</code></dt>
+                <dd> - Número de colunas.</dd>
+            </dl>
+        </section>
+        <section>
             <h2>Imagem</h2>
-            <p><code>background-image: url();</code> - caminho da imagem de fundo.</p>
-            <p><code>background-position: left top;</code> - posicionamento da imagem.</p>
-            <p><code>background-size: 100px;</code> - tamanho da imagem.</p>
-            <p><code>background-repeat: no-repeat;</code> - número de repetições da imagem.</p>
-            <p><code>background-size: cover;</code> - preencher o fundo inteiro com a imagem.</p>
-            <p><code>background-attachement: fixed;</code> - para a imagem de fundo ficar fixa.</p>
-            <p>ShortHand: <br>
-            <code>background: color > image > position > repeat > size(não está funcionando) > attachement;</code></p>
-        </article>
-        <article>
-            <h2>Iframe</h2>
-            <p><code>&ltiframe src="caminho do site"frameborder="0" &gt</code> - tag do iframe.</p>
-            <p><code>target="'name' do iframe"</code> - para abrir um link dentro do Iframe.</p>
-            <p><code>sandbox="sandbox"</code> - para bloquear ações dentro do Iframe.</p>
-            <p><code>referrerpolicy="no-referrer"</code> - para não permitir a coleta de dados dentro do Iframe.</p>
-        </article>
-        <article>
-            <h2>Tabelas</h2>
-            <p><code>&ltcaption&gt</code> - título da tabela.</p>
-            <p><code>&lttr&gt</code> - linha da tabela.</p>
-            <p><code>&ltth&gt</code> - título da coluna da tabela.</p>
-            <p><code>&lttd&gt</code> - dado da tabela.</p>
-            <p><code>&ltthead&gt</code> - cabeçalho da tabela.</p>
-            <p><code>&lttbody&gt</code> - corpo da tabela.</p>
-            <p><code>&lttfoot&gt</code> - rodapé da tabela.</p>
-            <p><code>border-collapse: collapse;</code> - deixar as linhas da tabela juntas.</p>
-            <p><code>vertical-aligh: bottom;</code> - alinhamento vertical.</p>
-            <p><code>escope: "col/row";</code> - para indicar se os dados estão do lado ou abaixo.</p>
-            <p><code>colspan="2"</code> - mesclagem de colunas.</p>
-            <p><code>rowspan="3"</code> - mesclagem de linhas.</p>
-            <p><code>th:nth-child(2n){}</code> - efeito zebrado.</p>
-            <p><code>&ltcolgroup&gt > &ltcol&gt</code> - selecionar colunas.</p>
-        </article>
-        <article>
-            <h2>Formulários</h2>
-            <p><code>&ltform&gt</code> - criar área de formulário. <br>action="cadasrto.php" - ligar o formulário a outra linguagem. <br>method="get/post" - indica como os dados serão enviados.</p>
-            <p><code>&ltlabel&gt</code> - liga o input a um texto. <br>for="(o id do input)"</p>
-            <p><code>&ltinput&gt</code> - cria a área que ira receber os dados. <br>type="text" - indica o tipo do input. <br>required - indica que o campo é obrigtório. <br>minlength="5" - mínimo de caracteres aceitos. <br>maxlength="15" - maximo de caracteres aceitos. <br>max="0" - número mínimo aceito. <br>max="100" - número maximo aceito. <br>size="30" - o tamanho da caixa. <br>placeholder="Digite seu email" - dica para o usuário digitar. <br>step="0.5" - tamanho do salto em caixas numericas. <br>value="" - valor predefinido para a caixa. <br>pattern="^\(\d{2}\)\d{4,5}-\d{4}$" - padrão predefinido de escrita. <br>checked - a caixa já começa marcada.</p>
-            <p><code>&lttextarea&gt</code> - área de texto.</p>
-        </article>
-        <article>
-            <h2>Select</h2>
-            <p><code>&ltslect&gt</code> - cria a lista de seleção.</p>
-            <p><code>&ltoption&gt</code> - opções da lista.</p>
-            <p><code>&ltoptgroup&gt</code> - título da lista.</p>
-            <p><code>&ltdatalist&gt</code> - possíveis valores da lista.</p>
-        </article>
-        <article>
+            <dl>
+                <dt><code>background-image: url();</code></dt> 
+                <dd>- Caminho da imagem de fundo.</dd>
+                <dt><code>background-position: left top;</code></dt> 
+                <dd>- Posicionamento da imagem.</dd>
+                <dt><code>background-size: 100px;</code></dt> <dd>- Tamanho da imagem.</dd>
+                <dt><code>background-repeat: no-repeat;</code></dt> 
+                <dd>- Número de repetições da imagem.</dd>
+                <dt><code>background-size: cover;</code></dt> <dd>- Preencher o fundo inteiro com a imagem.</dd>
+                <dt><code>background-attachement: fixed;</code></dt> 
+                <dd>- Para a imagem de fundo ficar fixa.</dd>
+                <dt>ShortHand:</dt>
+                <dd><code>background: color > image > position > repeat > size(não está funcionando) > attachement;</code></dd>
+            </dl>
+        </section>
+        <section>
             <h2>Media Queryies</h2>
             <p>&ltlink rel="stylesheet" href="estilos/celular.css" media="(o tipo de media. Ex: screen, print, all, etc.)"&gt</p>
             <p>media="screen and (orientation: portraid)"</p>
@@ -310,10 +377,10 @@
             Tablet: 768px até 992px. <br>
             Desktop: 992px até 1200px. <br>
             Grandes telas: acima de 1200px.</p>
-        </article>
+        </section>
     </main>
     <footer>
-
+        <p>@everton.leon7</p>
     </footer>
 </body>
 </html>
